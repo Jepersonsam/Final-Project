@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>contact-Us</title>
+    <style>
+        .register-form {
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="bg-white">
+        <div class="container mx-auto flex justify-between items-center py-3">
+            <a href="#" class="text-lg font-bold">
+                <img src="img/rinso-logo.png" alt="Your Logo" class="h-16 w-100 ">
+            </a>
+            <button type="button" class="lg:hidden block text-gray-600 focus:outline-none focus:text-gray-800">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <div class="hidden sm:flex">
+                <ul class="flex justify-end space-x-4">
+                    <li class="nav-item">
+                        <a href="tailwind.html" class="text-gray-600 hover:text-gray-800">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="biodatatailwind.html" class="text-gray-600 hover:text-gray-800">Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="freecontent.html" class="text-gray-600 hover:text-gray-800">Free Content</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-gray-700 mb">
+        <div class="register-form" style="background-image: url(img/contact-us.png);">
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name:</label>
+                    <input type="text" name="fname" class="border-2 p-2 w-full rounded-md">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" name="email" class="border-2 p-2 w-full rounded-md">
+                </div>
+
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" name="username" class="border-2 p-2 w-full rounded-md">
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" name="password" id="password" class="border-2 p-2 w-full rounded-md">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Gender:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="gender" id="male" value="male" class="border-2 p-2 rounded-md">
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="gender" id="female" value="female" class="border-2 p-2 rounded-md">
+                        <label for="female" class="form-check-label">Female</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="religion" class="form-label">Religion:</label>
+                    <select name="religion" id="religion" class="border-2 p-2 w-full rounded-md">
+                        <option value="christianity">Christianity</option>
+                        <option value="islam">Islam</option>
+                        <option value="hinduism">Hindu</option>
+                        <option value="buddhism">Buddha</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address:</label>
+                    <textarea name="address" id="address" rows="4" class="border-2 p-2 w-full rounded-md"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Hobbies:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="hobbies" id="reading" value="reading"
+                            class="border-2 p-2 rounded-md">
+                        <label for="reading" class="form-check-label">Reading</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="hobbies" id="sports" value="sports"
+                            class="border-2 p-2 rounded-md">
+                        <label for="sports" class="form-check-label">Sports</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="hobbies" id="painting" value="painting"
+                            class="border-2 p-2 rounded-md">
+                        <label for="painting" class="form-check-label">Painting</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="hobbies" id="traveling" value="traveling"
+                            class="border-2 p-2 rounded-md">
+                        <label for="traveling" class="form-check-label">Traveling</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="bg-gray-50">
+        <div class="z-10 flex flex-col items-start max-w-container p-6 mx-auto md:flex-row">
+            <div class="my-5 md:order-0">
+                <p class="block mb-6 text-base font-bold text-tuna">Terhubung dengan kami</p>
+                <div class="flex gap-1">
+                    <a rel="nofollow noopener noreferrer" title="Instagram"
+                        href="https://www.instagram.com/rinsoid/"
+                        class="bg-gray-300 rounded-full flex-shrink-0 flex-grow-0 flex items-center justify-center cursor-pointer outline-none transition-colors w-16 h-16 hover:bg-instagram">
+                        <img width="28" height="28" alt="instagram" src="img/icon-instagram.png"
+                            class="w-[28px] h-[28px] brightness-0 invert">
+                    </a>
+                    <a rel="nofollow noopener noreferrer" title="YouTube"
+                        href="https://www.youtube.com/user/RinsoIndonesia"
+                        class="bg-gray-300 rounded-full flex-shrink-0 flex-grow-0 flex items-center justify-center cursor-pointer outline-none transition-colors w-16 h-16 hover:bg-[color:#ff0000]">
+                        <img width="28" height="28" alt="YouTube" src="img/icon-youtube.png"
+                            class="w-[28px] h-[28px] brightness-0 invert">
+                    </a>
+                    <a rel="nofollow noopener noreferrer" title="Facebook"
+                        href="https://www.facebook.com/RinsoIndonesia"
+                        class="bg-gray-300 rounded-full flex-shrink-0 flex-grow-0 flex items-center justify-center cursor-pointer outline-none transition-colors w-16 h-16 hover:bg-[color:#0075fb]">
+                        <img width="28" height="28" alt="Facebook" src="img/facebook.png"
+                            class="w-[28px] h-[28px] brightness-0 invert">
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col pl-3 my-5 md:mx-10 md:border-l md:border-gray-300">
+                <p class="block mb-4 text-base font-bold text-tuna">Mendukung</p>
+                <ul class="min-w-24">
+                    <li>
+                        <a title="Kenali lebih dalam" class="animate-underline after:block after:mb-2"
+                            href="/id/kenali-lebih-dalam.html">
+                            Kenali lebih dalam
+                        </a>
+                    </li>
+                    <li>
+                        <a title="FAQ" class="animate-underline" href="/id/faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col pl-3 my-5 md:mx-10 md:border-l md:border-gray-300">
+                <p class="block mb-4 text-base font-bold text-tuna">Belajarlah lagi</p>
+                <ul class="min-w-24">
+                    <li>
+                        <a title="Aksesibilitas" class="animate-underline"
+                            href="https://notices.unilever.com/id/">Aksesibilitas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col pl-3 my-5 md:mx-10 md:border-l md:border-gray-300">
+                <p class="block mb-4 text-base font-bold text-tuna">Lainnya</p>
+                <ul class="min-w-24">
+                    <li>
+                        <a title="Peta situs" class="animate-underline after:block after:mb-2"
+                            href="/id/sitemap.html">
+                            Peta situs
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Privasi" class="animate-underline after:block after:mb-2"
+                            href="/id/Privasi.html">Privasi</a>
+                    </li>
+                    <li>
+                        <a title="Legal" class="animate-underline" href="/id/Legal.html">Legal</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col pl-3 my-5">
+                <p class="block mb-4 text-base font-bold text-tuna">Kunjungi</p>
+                <ul class="min-w-24">
+                    <li>
+                        <a title="Peta situs" class="hover:underline font-semibold"
+                            href="https://unai.edu/">
+                            Universitas Advent Indonesia
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Privasi" class=" hover:text-green-900 hover:underline font-semibold"
+                            href="https://fti.unai.edu/">Fakultas Teknologi Informasi
+                        </a>
+                    </li>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <div style="background-color:#00326d ;">
+        <div class="z-10 max-w-container p-6 mx-auto md:h-24 lg:flex lg:items-center lg:py-0 lg:pr-28">
+            <a rel="nofollow noopener noreferrer" title="www.unilever.com" href="https://www.unilever.com"
+                class="relative text-sm font-bold text-white hover:text-white animate-underline">
+                © Unilever 2023
+            </a>
+            <div
+                class="flex flex-wrap pt-2 mt-2 border-t border-white lg:inline-flex lg:mt-0 lg:border-t-0 lg:pt-0">
+                <span role="separator"
+                    class="inline-block mx-3 border-l border-white hidden lg:inline-block"></span>
+                <a rel="nofollow noopener noreferrer" title="Pemberitahuan Privasi"
+                    href="https://www.unilevernotices.com/privacy-notices/indonesia-bahasa.html"
+                    class="text-sm font-medium text-white hover:text-white">Pemberitahuan
+                    Privasi</a>
+                <span role="separator" class="inline-block mx-3 border-l border-white"></span>
+                <a rel="nofollow noopener noreferrer" title="Pemberitahuan Cookie"
+                    href="https://www.unilevernotices.com/cookie-notices/indonesia-bahasa.html"
+                    class="text-sm font-medium text-white hover:text-white">Pemberitahuan
+                    Cookie</a>
+                <span role="separator" class="inline-block mx-3 border-l border-white"></span>
+                <a rel="nofollow noopener noreferrer" title="Syarat Penggunaan"
+                    href="https://www.unilever.com/legal.html"
+                    class="text-sm font-medium text-white hover:text-white">Syarat
+                    Penggunaan</a>
+            </div>
+        </div>
+        </div>
+<div class="z-20 flex justify-end pl-6">
+<a rel="nofollow noopener noreferrer" title="www.unilever.com" href="https://www.unilever.com">
+    <img alt="Unilever Logo" src="img/unilever-logo.gif" loading="lazy" class="w-24 h-24 lg:-mt-24">
+</a>
+</div>
+<div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true">
+</div>
+
+    <script>
+        function validateForm() {
+            let name = document.forms["myForm"]["fname"].value;
+            let email = document.forms["myForm"]["email"].value;
+            let username = document.forms["myForm"]["username"].value;
+            let password = document.forms["myForm"]["password"].value;
+            let gender = document.querySelector('input[name="gender"]:checked');
+            let religion = document.forms["myForm"]["religion"].value;
+            let address = document.forms["myForm"]["address"].value;
+            let hobbies = document.querySelectorAll('input[name="hobbies"]:checked');
+
+            if (name === "") {
+                alert("Mohon Isi Kolom Nama");
+                return false;
+            }
+
+            if (email === "") {
+                alert("Mohon Isi Kolom E-mail");
+                return false;
+            } else {
+                let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email.match(emailPattern)) {
+                    alert("Alamat email tidak valid");
+                    return false;
+                }
+            }
+
+            if (username === "") {
+                alert("Mohon Isi Kolom Username");
+                return false;
+            }
+
+            if (password === "") {
+                alert("Mohon Isi Kolom Password");
+                return false;
+            }
+
+            if (!gender) {
+                alert("Mohon Pilih Jenis Kelamin");
+                return false;
+            }
+
+            if (religion === "") {
+                alert("Mohon Pilih Agama");
+                return false;
+            }
+
+            if (address === "") {
+                alert("Mohon Isi Kolom Alamat");
+                return false;
+            }
+
+            if (hobbies.length === 0) {
+                alert("Mohon Pilih Minimal Satu Hobi");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
